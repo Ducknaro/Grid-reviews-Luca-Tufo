@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+
+@import "global";
+@import "wrapper";
+@import "attr";
+
+@media all and (max-width:800px){
+ .wrapper{
+
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-areas: 
+  "wrap1 wrap1 wrap1 wrap1"
+  "wrap2 wrap2 wrap2 wrap2"
+  "wrap3 wrap3 wrap3 wrap3"
+  "wrap4 wrap4 wrap4 wrap4"
+  "wrap5 wrap5 wrap5 wrap5";
+ }
+ .wrapper .wrap{
+  width: 85vw;
+ }
+ .wrapper .wrap .wrap-header #kira{
+  color:black;
+ }
+ 
+}
+
+
+
+
+
+

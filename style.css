@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf2f8;
+}
+
+.wrapper .wrap1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: wrap1;
+  background-color: #7541c8;
+}
+
+.wrapper .wrap2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: wrap2;
+  background-color: #48556a;
+}
+
+.wrapper .wrap3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: wrap3;
+  background-color: white;
+}
+
+.wrapper .wrap4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: wrap4;
+  background-color: #19212e;
+}
+
+.wrapper .wrap5 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: wrap5;
+  background-color: white;
+}
+
+.wrapper .wrap {
+  margin: 1rem 1rem;
+  border-radius: 25px;
+}
+
+.wrapper .wrap .wrap-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapper .wrap .wrap-header img {
+  margin: 1rem 1rem;
+}
+
+.wrapper .wrap .wrap-header h4 {
+  margin: 1rem 1rem;
+  color: white;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 14px;
+}
+
+.wrapper .wrap .wrap-header #kira {
+  color: black;
+}
+
+.wrapper .wrap .wrap-header h4 .gray {
+  color: gray;
+}
+
+.wrapper .wrap .first-paragraph {
+  padding: 1rem;
+  font-weight: 900;
+  color: white;
+}
+
+.wrapper .wrap .second-paragraph {
+  color: gray;
+  font-weight: 800;
+  padding: 1rem;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "wrap1 wrap1 wrap2 wrap5" "wrap3 wrap4 wrap4 wrap5";
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  grid-gap: 20px;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .wrap .wrap-header img {
+  border-radius: 25px;
+  width: 35px;
+  height: 35px;
+}
+
+.attribution {
+  text-align: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 800px) {
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: "wrap1 wrap1 wrap1 wrap1" "wrap2 wrap2 wrap2 wrap2" "wrap3 wrap3 wrap3 wrap3" "wrap4 wrap4 wrap4 wrap4" "wrap5 wrap5 wrap5 wrap5";
+  }
+  .wrapper .wrap {
+    width: 85vw;
+  }
+  .wrapper .wrap .wrap-header #kira {
+    color: black;
+  }
+}
+/*# sourceMappingURL=style.css.map */
